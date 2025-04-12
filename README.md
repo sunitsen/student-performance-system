@@ -1,3 +1,4 @@
+<pre>
 -- Create the subjects table
 CREATE TABLE subjects (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -59,3 +60,5 @@ SELECT student_id, subject_id FROM (
 INSERT INTO marks (student_id, subject_id, marks)
 SELECT ss.student_id, ss.subject_id, FLOOR(RAND() * 61) + 40
 FROM student_subjects ss;
+
+</pre>
